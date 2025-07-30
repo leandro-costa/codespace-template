@@ -1,0 +1,9 @@
+{
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-24",
+            "path": "/home/vscode/.local/share/mise/installs/java/latest",
+            "default": true
+        }
+    ]
+}
