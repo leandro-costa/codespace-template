@@ -3,9 +3,22 @@
 {
 	"name": "Alpine",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
-		"ghcr.io/roul/devcontainer-features/mise-java:1": {}
+		"ghcr.io/roul/devcontainer-features/mise-java:1": {
+			"javaVersion": "24",
+			"jdkType": "temurin",
+			"jdkVariant": "jre"
+		},
+		"ghcr.io/devcontainers-extra/features/maven-sdkman:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"MS-CEINTL.vscode-language-pack-pt-BR"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
